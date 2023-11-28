@@ -1,5 +1,4 @@
-// L@@K CHALLENGE !!: SORTING ARRAY of OBJECTS by NUM and STR KEYS
-// Provide the missing code in the 3 spots that say "L@@K CHALLENGE !!"
+//Chinese Zodiac Animals with spinning wheel and range slider
 
 // get the section (red box) which holds all the animals:
 const section = document.querySelector('section');
@@ -7,7 +6,7 @@ const section = document.querySelector('section');
 const sortMenu = document.querySelector('select');
 sortMenu.addEventListener('change', sortAnimals);
 
-// L@@K CHALLENGE !!
+
 //  write function that runs when checkbox is checked or unchecked
 // get the checkbox menu and have it run inline anon func:
 // - this code is very short, so rather than declare a function for this
@@ -79,7 +78,7 @@ function renderAnimals() { // output the 12 animals to the section
         let yearsStr = `<span style="background-color:#C21;padding:3px 5px;color:#fff;">
                         ${animal.yr}</span><br><br>`;
        
-        // L@@K CHALLENGE !! -- write the for loop that concats the yearsStr
+
         // there should be a total of 12 years: 2020 2008 1996 1984 1972 1960
         for(let y = animal.yr-12; y >= animal.yr-120; y-=12) {
             yearsStr += y + " ";
@@ -103,7 +102,7 @@ function sortAnimals() {
     renderAnimals();  // render a freshly sorted animals DOM
 }
 
-// L@@K CHALLENGE !! Make the wheel spin !
+
 // setInterval takes two args: a callback and a time delay in ms
 // setInterval(callback, milisec)
 const wheel = document.querySelector('.wheel');
